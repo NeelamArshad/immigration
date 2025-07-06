@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Neelam Arshad">
 
-<title>Three Parameters: Causal – Immigration</title>
+<title>About – Immigration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -120,11 +90,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -146,19 +116,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Three Parameters: Causal</h1>
+<h1 class="title">About</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Neelam Arshad </p>
-          </div>
-  </div>
     
   
     
@@ -169,51 +133,7 @@ window.Quarto = {
 </header>
 
 
-<p><span class="math display">\[
-Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \beta_3 X_{3i} + \epsilon_i
-\]</span></p>
-<p><span class="math display">\[
-\widehat{\text{att\_end}} = 8.45 + 1.55 \times \text{treatment}_{\text{Treated}}
-\]</span></p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<caption>Table: Estimates and 95% Confidence Intervals for Model Parameters (Source: Enos, 2014)</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">term</th>
-<th style="text-align: right;">estimate</th>
-<th style="text-align: right;">conf.low</th>
-<th style="text-align: right;">conf.high</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">8.45</td>
-<td style="text-align: right;">7.77</td>
-<td style="text-align: right;">9.14</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">treatmentTreated</td>
-<td style="text-align: right;">1.55</td>
-<td style="text-align: right;">0.51</td>
-<td style="text-align: right;">2.58</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Attitudes toward immigration are an important aspect of public opinion that can be influenced by social and demographic factors and are an increasingly important part of US congressional elections. Using data from a 2012 experiment among Boston commuters, we examine the average causal effect of exposure to Spanish-speakers on people’s attitudes toward immigration among registered voters in Georgia today. Using data from a 2012 survey of Boston-area commuters, we seek to measure the causal effect of exposure to Spanish-speakers on attitudes toward immigration among adults in Chicago and similar cities in 2024. There is some concern that unmeasured factors, such as prior personal experiences with immigrants, could bias the estimated relationship. We model attitudes toward immigration, measured on a continuous scale of conservatism, as a linear function of whether respondents were exposed to Spanish-speaking confederates. This allows us to estimate how average attitudes shift between treated and untreated individuals. The average causal effect of exposure to Spanish speakers is estimated to increase immigration conservatism by approximately 1.55 points, with a 95% confidence interval ranging from 0.51 to 2.58.</p>
+<p>About this site</p>
 
 
 

@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Three Parameters: Causal",
+    "section": "",
+    "text": "\\[\nY_i = \\beta_0 + \\beta_1 X_{1i} + \\beta_2 X_{2i} + \\beta_3 X_{3i} + \\epsilon_i\n\\]\n\\[\n\\widehat{\\text{att\\_end}} = 8.45 + 1.55 \\times \\text{treatment}_{\\text{Treated}}\n\\]\n\n\n\nTable: Estimates and 95% Confidence Intervals for Model Parameters (Source: Enos, 2014)\n\n\nterm\nestimate\nconf.low\nconf.high\n\n\n\n\n(Intercept)\n8.45\n7.77\n9.14\n\n\ntreatmentTreated\n1.55\n0.51\n2.58\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttitudes toward immigration are an important aspect of public opinion that can be influenced by social and demographic factors and are an increasingly important part of US congressional elections. Using data from a 2012 experiment among Boston commuters, we examine the average causal effect of exposure to Spanish-speakers on people’s attitudes toward immigration among registered voters in Georgia today. Using data from a 2012 survey of Boston-area commuters, we seek to measure the causal effect of exposure to Spanish-speakers on attitudes toward immigration among adults in Chicago and similar cities in 2024. There is some concern that unmeasured factors, such as prior personal experiences with immigrants, could bias the estimated relationship. We model attitudes toward immigration, measured on a continuous scale of conservatism, as a linear function of whether respondents were exposed to Spanish-speaking confederates. This allows us to estimate how average attitudes shift between treated and untreated individuals. The average causal effect of exposure to Spanish speakers is estimated to increase immigration conservatism by approximately 1.55 points, with a 95% confidence interval ranging from 0.51 to 2.58."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
