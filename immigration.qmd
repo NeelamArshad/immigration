@@ -13,6 +13,7 @@ library(tidyverse)
 library(primer.data)
 library(tidymodels)
 library(broom)
+library(knitr)
 ```
 
 $$
@@ -28,6 +29,15 @@ $$
 fit_att <- linear_reg(engine = "lm") |> fit(att_end ~ treatment, data = trains)
 ```
 
-Attitudes toward immigration are an important aspect of public opinion that can be influenced by social and demographic factors and are an increasingly important part of US congressional elections. Using data from a 2012 experiment among Boston commuters, we examine the average causal effect of exposure to Spanish-speakers on people’s attitudes toward immigration among registered voters in Georgia today. Using data from a 2012 survey of Boston-area commuters, we seek to measure the causal effect of exposure to Spanish-speakers on attitudes toward immigration among adults in Chicago and similar cities in 2024. There is some concern that unmeasured factors, such as prior personal experiences with immigrants, could bias the estimated relationship.
+```{r}
+tidy(fit_att, conf.int = TRUE) |>
+  select(term, estimate, conf.low, conf.high) |>
+  kable(
+    digits = 2,
+    caption = "Table: Estimates and 95% Confidence Intervals for Model Parameters (Source: Enos, 2014)"
+  )
+```
 
+Attitudes toward immigration are an important aspect of public opinion that can be influenced by social and demographic factors and are an increasingly important part of US congressional elections. Using data from a 2012 experiment among Boston commuters, we examine the average causal effect of exposure to Spanish-speakers on people’s attitudes toward immigration among registered voters in Georgia today. Using data from a 2012 survey of Boston-area commuters, we seek to measure the causal effect of exposure to Spanish-speakers on attitudes toward immigration among adults in Chicago and similar cities in 2024. There is some concern that unmeasured factors, such as prior personal experiences with immigrants, could bias the estimated relationship. We model attitudes toward immigration, measured on a continuous scale of conservatism, as a linear function of whether respondents were exposed to Spanish-speaking confederates. This allows us to estimate how average attitudes shift between treated and untreated individuals.
+ 
 

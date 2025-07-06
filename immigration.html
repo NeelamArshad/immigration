@@ -105,7 +105,36 @@ Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \beta_3 X_{3i} + \epsilon_i
 <p><span class="math display">\[
 \widehat{\text{att\_end}} = 8.45 + 1.55 \times \text{treatment}_{\text{Treated}}
 \]</span></p>
-<p>Attitudes toward immigration are an important aspect of public opinion that can be influenced by social and demographic factors and are an increasingly important part of US congressional elections. Using data from a 2012 experiment among Boston commuters, we examine the average causal effect of exposure to Spanish-speakers on people’s attitudes toward immigration among registered voters in Georgia today. Using data from a 2012 survey of Boston-area commuters, we seek to measure the causal effect of exposure to Spanish-speakers on attitudes toward immigration among adults in Chicago and similar cities in 2024. There is some concern that unmeasured factors, such as prior personal experiences with immigrants, could bias the estimated relationship.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Table: Estimates and 95% Confidence Intervals for Model Parameters (Source: Enos, 2014)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">term</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">conf.low</th>
+<th style="text-align: right;">conf.high</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">8.45</td>
+<td style="text-align: right;">7.77</td>
+<td style="text-align: right;">9.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">treatmentTreated</td>
+<td style="text-align: right;">1.55</td>
+<td style="text-align: right;">0.51</td>
+<td style="text-align: right;">2.58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Attitudes toward immigration are an important aspect of public opinion that can be influenced by social and demographic factors and are an increasingly important part of US congressional elections. Using data from a 2012 experiment among Boston commuters, we examine the average causal effect of exposure to Spanish-speakers on people’s attitudes toward immigration among registered voters in Georgia today. Using data from a 2012 survey of Boston-area commuters, we seek to measure the causal effect of exposure to Spanish-speakers on attitudes toward immigration among adults in Chicago and similar cities in 2024. There is some concern that unmeasured factors, such as prior personal experiences with immigrants, could bias the estimated relationship. We model attitudes toward immigration, measured on a continuous scale of conservatism, as a linear function of whether respondents were exposed to Spanish-speaking confederates. This allows us to estimate how average attitudes shift between treated and untreated individuals.</p>
 
 </main>
 <!-- /main column -->
