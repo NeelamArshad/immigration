@@ -1,3 +1,5 @@
 immigration_files
 
 *_cache
+
+/.quarto/
